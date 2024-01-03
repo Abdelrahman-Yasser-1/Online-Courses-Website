@@ -1,0 +1,298 @@
+:root {
+  --orange-color: #ff9500;
+  --orange-50: #ff9500;
+  --light-orange-color: #fff4e5;
+  --bg-color: #f7f7f8;
+  --grey-40: #656567;
+  --grey-35: #59595a;
+  --grey-30: #4c4c4d;
+  --grey-20: #333333;
+  --grey-15: #262626;
+  --white-99: #fcfcfd;
+  --white-95: #f1f1f3;
+  --white-97: #f7f7f8;
+  --orange-90: #ffeacc;
+  --orange-95: #fff4e5;
+  --orange-97: #fff9f0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Be Vietnam Pro", sans-serif;
+  background-color: var(--white-97);
+  color: var(--grey-15);
+}
+
+::selection {
+  background-color: var(--orange-color);
+  color: white;
+}
+
+/* Start General Style */
+/* Backgrounds and Borders and Text-Color*/
+.main-button {
+  background-color: var(--orange-color);
+  border-color: var(--orange-color);
+  color: white;
+}
+
+.main-button:hover {
+  background-color: var(--bg-color);
+  color: var(--orange-color);
+  border-color: var(--orange-color);
+}
+
+.border-orange-90 {
+  border: 1px solid var(--orange-90);
+}
+
+.border-white-95 {
+  border: 1px solid var(--white-95);
+}
+
+.bg-orange-97 {
+  background-color: var(--orange-97);
+}
+
+.bg-orange-50 {
+  background-color: var(--orange-50);
+}
+
+.bg-orange-95,
+.bg-white-95:hover {
+  background-color: var(--orange-95);
+}
+
+.bg-white-99,
+.bg-white-99:hover {
+  background-color: var(--white-99);
+}
+
+.bg-white-97,
+.bg-white-97:hover {
+  background-color: var(--white-97);
+}
+
+.text-grey-40 {
+  color: var(--grey-40);
+}
+
+.text-grey-35 {
+  color: var(--grey-35);
+}
+
+.text-grey-30 {
+  color: var(--grey-30);
+}
+
+.text-grey-20 {
+  color: var(--grey-20);
+}
+
+.text-grey-15 {
+  color: var(--grey-15);
+}
+
+hr {
+  color: var(--white-95);
+}
+
+.card {
+  border-color: white;
+}
+
+/* End General Style */
+
+/* Start Top Panner */
+.top-panner {
+  padding: 14px 0;
+  margin: 0px 23px;
+}
+
+/* End Top Panner */
+
+/* Start Navbar */
+.top-panner {
+  background-color: var(--orange-color) !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  line-height: 16px !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus,
+.navbar-toggler {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  padding: 0px;
+}
+
+.navbar-collapse a.active {
+  background-color: var(--white-95);
+}
+
+/* End Navbar */
+
+/* Start Hero Section  */
+.hero span {
+  color: var(--orange-color);
+}
+
+.hero_title {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.hero > div > div > span {
+  background-color: var(--light-orange-color);
+}
+
+/* End Hero Section  */
+
+/* Start Brands Section  */
+section.brands > div {
+  position: relative;
+}
+
+/* .brands div img:not(:last-child)::after { */
+.brands div img::after {
+  /* img.brand-image::after { */
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -7px;
+  width: 10px;
+  background-color: black;
+}
+
+/* End Brands Section  */
+
+/* Start Video Section */
+.video-thumbnail {
+  max-height: 650px;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(80%);
+}
+
+.video-controller {
+  border: 6px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5000px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* End Video Section */
+
+/* Start Benefits Section */
+.benefits .card {
+  min-height: 380px;
+}
+
+.benefit {
+  min-height: 395px;
+}
+
+.benefits .card .card-title {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.benefits h1 {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+/* End Benefits Section */
+
+/* Start Our Courses Section */
+.course_image {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+}
+
+.courses .row .col-sm-6 .card {
+  min-height: 685px;
+}
+
+/* End Our Courses Section */
+
+/* Start Our Testimonials Section */
+.testimonials .card {
+  min-height: 300px;
+}
+
+/* End Our Testimonials Section */
+
+/* Start plan Section  */
+.plan_feature {
+  border: 1px solid var(--white-95);
+}
+
+/* End plan Section  */
+
+/* Start FAQ’s Section */
+
+.faq:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.faqs .accordion-button {
+  background-color: white;
+}
+
+.faqs .accordion-button:not(.collapsed)::after {
+  background-image: url("../../assets/icons/close.svg");
+  background-size: 1.5rem;
+  background-color: var(--orange-95);
+  border-radius: 0.25rem;
+  padding: 15px;
+  background-position: center;
+}
+
+.faqs .accordion-button::after {
+  background-image: url("../../assets/icons/plus.svg");
+  background-size: 1.5rem;
+  background-color: var(--orange-95);
+  border-radius: 0.25rem;
+  padding: 15px;
+  background-position: center;
+}
+
+.faqs .accordion-button {
+  box-shadow: none;
+}
+
+/* End FAQ’s Section */
+
+/* ************************** Mobile Screen ************************** */
+
+@media only screen and (max-width: 767px) {
+  /* Hero Section */
+  .hero_title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  /* Courses Section */
+  .courses .row .col-sm-6 .card {
+    min-height: auto;
+    /* border-color: white; */
+  }
+
+  .course_image {
+    width: auto;
+    height: 165px;
+    object-fit: cover;
+  }
+}
